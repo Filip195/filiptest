@@ -4,6 +4,8 @@ metadata:
   name: wordpress
   labels:
     app: wordpress
+  annotations:
+    cloud.google.com/backend-config: '{"default": "wordpress-backendconfig"}'
 spec:
   type: ClusterIP
   selector:
